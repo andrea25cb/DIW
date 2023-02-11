@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maquetacion</title>
+</head>
+<style>
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contenedor{
+    width:100%;
+    height:500px;
+    margin: auto;
+    text-align: center;
+}
+#izq,#der {
+display: inline-block;
+/*float: left;*/ 
+width: 10%;
+height: 500px;
+background: red;
+}
+#centro{
+    display: inline-block;
+    /*float: left; */
+    width: 80%;
+    height: 500px;
+}
+
+#arr,#abaj{
+height: 10%;
+background: green;
+
+}
+
+#medio{
+height:80%;
+background:yellow;
+}
+
+</style>
+<body>
+<div class="contenedor"><div id="izq">izquierda </div><div id="centro"><div id="arr">arriba</div><div id="medio">medio</div><div id="abaj">abajo</div></div><div id="der">derecha</div>
+</div>
+</body>
+</html>

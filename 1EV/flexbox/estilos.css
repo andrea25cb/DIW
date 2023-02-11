@@ -1,0 +1,354 @@
+
+
+/* EJEMPLO 1 */
+/* .contenedor {
+    display: flex;
+    flex-wrap: no-wrap;
+    background-color: rgb(77, 75, 75);
+} 
+
+.elemento{
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+*/
+
+/*EJEMPLO 2*/
+/* 
+.contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(77, 75, 75);
+}
+.elemento{
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+}  */
+
+
+/* EJEMPLO 3 */
+/* .contenedor {
+    float: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(77, 75, 75);
+}  */
+
+
+/*EJEMPLO 4*/
+/* .contenedor {
+    display: flex;
+    flex-direction: column-reverse;
+    float: left;
+    box-sizing: border-box;
+    background-color: rgb(77, 75, 75);
+} */
+
+
+/*EJEMPLO 5*/
+/* .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(77, 75, 75);
+}
+
+.elemento {
+    display: flex;
+    width: 17%;
+    justify-content: center;
+    text-align: center;
+} */
+
+
+/*EJEMPLO 6*/
+/* .contenedor {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.elemento {
+    width: 120px;
+    height: 120px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+} */
+
+/*EJEMPLO 7*/
+/* .contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+.elemento {
+    width: 120px;
+    height: 120px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+}  */
+
+
+/*EJEMPLO 8*/
+/* .contenedor {
+   es igual al 5
+} */
+
+/*EJEMPLO 9*/
+/* .contenedor {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.elemento {
+    width: 21%;
+    height: 120px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+} */
+
+/*EJEMPLO 10*/
+/* .contenedor {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: left;
+}
+.elemento {
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+} */
+
+/*EJEMPLO 11*/
+/* .contenedor {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.elemento {
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+} */
+
+/*EJEMPLO 12*/
+/* .contenedor {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.elemento {
+    width: 21%;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120px;
+    text-align: center;
+} */
+
+
+/*EJEMPLO 14*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: rgb(77, 75, 75);
+}
+.elemento{
+    width: 15%;
+} */
+
+/*EJEMPLO 15*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    background-color: rgb(77, 75, 75);
+}
+.elemento{
+    width: 21%;
+    height: 50px;
+} */
+
+/*EJEMPLO 16*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    background-color: rgb(77, 75, 75);
+    text-align: center; 
+}
+.elemento{
+    width: 21%;
+    text-align: center;
+} */
+
+
+/*EJEMPLO 18*/
+/* .contenedor {
+    height: 240px;
+    display: flex;
+    flex-flow:row wrap;
+    align-items: baseline;
+    background-color: rgb(77, 75, 75);
+    text-align: center; 
+}
+
+.elemento{
+    width: 20%;
+    line-height: 2rem;
+}
+
+.elemento:first-child{
+    line-height: 4rem;
+}
+.elemento:nth-child(3){
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.elemento:nth-child(6){
+    font-size: 1rem;
+    line-height: 5rem;
+}
+.elemento:last-child{
+    line-height: 3rem;
+} */
+
+
+/*EJEMPLO 19*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background-color: rgb(77, 75, 75);
+    text-align: center;   
+}
+.elemento{
+    width: 21%;
+} */
+
+
+/*EJEMPLO 22*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    background-color: rgb(77, 75, 75);
+    text-align: center;  
+}
+.elemento{
+    width: 21%;
+} */
+
+
+/*EJEMPLO 23*/
+/* .contenedor{
+    height: 240px;
+    display: flex; 
+    flex-flow: row wrap;
+    align-content: space-between;
+    background-color: rgb(77, 75, 75);
+    text-align: center;   
+}
+.elemento{
+    width: 21%;
+}  */
+
+
+/*EJEMPLO 24*/
+/* .contenedor{
+    height: 240px;
+    display: flex;
+    flex-flow: row wrap;
+   align-content: space-around;
+   background-color: rgb(77, 75, 75); 
+   text-align: center; 
+}
+.elemento{
+    width: 21%;
+}  */
+
+
+/*EJEMPLO 25*/
+/* .contenedor{
+    display: flex; 
+    background-color: rgb(77, 75, 75);  
+}
+.elemento :nth-child(even){
+    order:1
+} */
+
+
+/*EJEMPLO 26*/
+.contenedor{
+    display: flex; 
+    background-color: rgb(77, 75, 75);  
+}
+.elemento{
+    flex:1 1 0;
+}
+
+.elemento :nth-child(4){
+    flex-grow: 3;
+}
+
+#elemento1 {
+    background-color: rgb(232, 220, 243);
+}
+
+#elemento2 {
+    background-color: rgb(209, 182, 234);
+}
+
+#elemento3 {
+    background-color: rgb(188, 146, 227);
+}
+
+#elemento4 {
+    background-color: rgb(149, 67, 226);
+}
+
+#elemento5 {
+    background-color: blueviolet;
+}
+
+#elemento6 {
+    background-color: rgb(121, 12, 224);
+}
+
+#elemento7 {
+    background-color: rgb(102, 12, 186);
+}

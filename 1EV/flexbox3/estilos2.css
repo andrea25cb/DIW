@@ -1,0 +1,107 @@
+            * {
+                margin: 10px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            
+            .padre {
+                display: flex;
+                flex-flow: column wrap;
+            }
+            
+            .header {
+                background: #000;
+                display: flex;
+                flex-flow: column wrap;
+            }
+            
+            .menu {
+                background: #2d4059;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+            
+            .logo,
+            .nav,
+            .social {
+                background-color: rgb(185, 94, 94);
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            
+            .nav {
+                flex: 5 1 auto;
+            }
+            
+            .texto-principal {
+                background-color: rgb(236, 162, 0);
+            }
+            
+            h1 {
+                background-color: #dde77f;
+            }
+            
+            .section {
+                background-color: rgb(0, 0, 0);
+                display: flex;
+            }
+            
+            .articulos {
+                background-color: rgb(115, 115, 238);
+                flex: 2 1 auto;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            
+            .article {
+                background-color: #2d4059;
+                flex: 1 45%;
+            }
+            
+            .navegacion {
+                background-color: aliceblue;
+                flex: 100%;
+            }
+            
+            .aside {
+                background-color: rgb(230, 80, 80);
+                flex: 1 auto;
+            }
+            
+            .footer {
+                background-color: black;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .pie {
+                background-color: wheat;
+                width: 300px;
+            }
+            
+            .publicidad {
+                background-color: white;
+            }
+            
+            @media(max-width:600px) {
+                .section {
+                    flex-direction: column;
+                }
+                .menu {
+                    flex-direction: column;
+                }
+                .aside {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+            @media(max-width:800px) {
+                .articulos {
+                    flex-direction: column;
+                }
+                .aside {
+                    flex-direction: column;
+                }
+            }

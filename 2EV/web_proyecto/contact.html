@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Favicon-->
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>andrea's portfolio</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" id="contact">
+    <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top">
+        <div class="container">
+
+            <div class="container d-flex align-items-center flex-column" style="margin-bottom: 2em;">
+                <a class="mx-0 mx-lg-1" href="index.html"><img width="110em" src="assets/logoo.png"></a>
+            </div>
+            <div class="container d-flex align-items-center flex-column">
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-black text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            Home
+                            <i class="fas fa-bars"></i>
+                        </button></div>
+            <div class="collapse navbar-collapse text-white " id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-white ">
+                    <li type="button" class="nav-item mx-0 mx-lg-1 text-white rounded"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="index.html">home</a></li>
+                    <li type="button" class=" nav-item mx-0 mx-lg-1 text-white rounded"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="portfolio.html">portfolio</a></li>
+                    <li type="button" class=" nav-item mx-0 mx-lg-1 text-white rounded"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="about.html">about</a></li>
+                    <li type="button" class=" nav-item mx-0 mx-lg-1 text-white rounded"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="contact.html">contact</a></li>
+                    <li type="button" class=" nav-item mx-0 mx-lg-1 text-white rounded">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded text-white" style="width:200px" data-bs-toggle="popover" title="NOTIFICATIONS" data-bs-content="You have 7 notifications to read.">Notifications
+                            <span class="badge bg-dark">7</span></a></li>
+                </ul>
+                <audio src="assets/Deep Sea.mp3" preload="none" controls></audio>
+                <!-- <audio src="assets/Deep Sea.mp3" autoplay loop></audio> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Contact Section-->
+    <section class="page-section">
+
+        <div class="container mt-3 ">
+
+            <!-- Contact Section Heading--><br><br><br><br><br><br>
+            <div class="page-section-heading text-center text-white mb-0 h1"><strong>CONTACT  <i class="fas fa-star"></i></strong></div>
+            <!-- Icon Divider-->
+            <br>
+            <!-- Contact Section Form-->
+
+            <div class="card row align-items-center rounded-5 bg-danger p-2 bg-opacity-50" style="margin-left: 10%; margin-right: 10%">
+
+                <div class="card-body col col-sm-12 col-md-6 col-xs-6 justify-content-center text-lg-center "></div>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" class="was-validated">
+                    <!-- Name input-->
+                    <pre class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis possimus hic rerum, magni nostrum, amet omnis blanditiis atque unde facilis! Ea fuga praesentium est quaerat dolorem, voluptatum nemo dicta?
+                        </pre>
+                    <!-- Multiple inputs -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Person</span>
+                        <input type="text" class="form-control" placeholder="First Name">
+                        <input required type="text" class="form-control" placeholder="Last Name">
+                    </div>
+
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input required class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                        <label for="phone">Phone number</label>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea required class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <!-- VALIDATION FORM: -->
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                        <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </div>
+
+                    <!-- Submit Button-->
+                    <button class="btn btn-dark btn btn-outline-success btn-lg" id="submitButton" type="submit">Send</button><br>
+                </form><br>
+            </div>
+
+        </div>
+        <br>
+        <div class="alert alert-warning alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Cuidado!</strong> Introduce tus datos de forma correcta, o no podremos contactar!
+        </div>
+
+    </section>
+
+    <div class="container md-3 align-items-center text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.3579263085792!2d-5.997137288376985!3d37.37289980000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c3b0452be33%3A0xbb0b302c739c4763!2sC.%20Juan%20Sebasti%C3%A1n%20Elcano%2C%2025%2C%2041011%20Sevilla!5e0!3m2!1ses!2ses!4v1676029558557!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Calle San Juan Sebastián, 23
+                        <br /> Sevilla
+                    </p>
+                </div>
+                <!-- Redes Sociales-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/andrea25cb"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+
+                </div>
+                <!-- About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About </h4>
+                    <p class="lead mb-0">
+                        Me gusta ver peliculas
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="spinner-border text-warning"></div>
+        <div class="container mt-3">
+            <h2>HOW MUCH DID YOU LIKE MY BLOG?</h2>
+            <label for="customRange" class="form-label">0 - 100</label>
+            <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+        </div>
+    </footer>
+
+    <!-- Copyright-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <div class="small">Copyright 2023 &copy; Andrea Cordón Barrionuevo</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="bubbles-container">
+            <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+    
+            <g class="bubbles-large" stroke-width="7">
+                <g>
+                    <g transform="translate(10 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(373 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(408 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(621 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(179 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                </g>
+            </g>
+    
+            <g class="bubbles-small" stroke-width="4">
+                <g>
+                    <g transform="translate(147 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(255 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(573 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(429 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(91 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(640 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(321 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(376 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(376 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+                <g>
+                    <g transform="translate(497 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                </g>
+            </g>
+    
+        </svg>
+        </div>
+    </div>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</body>
+
+</html>

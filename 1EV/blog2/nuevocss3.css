@@ -1,0 +1,176 @@
+/* CAMBIO 1*/
+body {
+    text-align: center;
+    }
+    #principal {
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+    }
+
+
+/* CAMBIO 2 AÑADIR
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+
+*/
+/* CAMBIO 3
+-moz-border-radius: 20px 10px 30px 50px;
+-webkit-border-radius: 20px 10px 30px 50px;
+border-radius: 20px 10px 30px 50px;
+*/
+
+/* CAMBIO 4
+-moz-border-radius: 20px / 10px;
+-webkit-border-radius: 20px / 10px;
+border-radius: 20px / 10px;
+
+*/
+
+/* CAMBIO 5 AÑADIR
+
+-moz-box-shadow: rgb(150,150,150) 5px 5px;
+-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+box-shadow: rgb(150,150,150) 5px 5px;
+*/
+
+/* CAMBIO 6 
+
+box-shadow: rgb(150,150,150) 5px 5px 10px;
+*/
+
+/* CAMBIO 7
+box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+*/
+
+/* CAMBIO 8
+#titulo {
+font: bold 36px verdana, sans-serif;
+text-shadow: rgb(0,0,150) 3px 3px 5px;
+}*/
+
+/* CAMBIO 9
+#titulo {
+font: bold 36px MiNuevaFuente, verdana, sans-serif;
+text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+@font-face {
+font-family: 'MiNuevaFuente';
+src: url('font.ttf');
+}
+
+*/
+
+/* CAMBIO 10
+AÑADIR A #principal:
+background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+background: -moz-linear-gradient(top, #FFFFFF, #006699);
+
+*/
+
+/*CAMBIO 11
+EN TITULO:
+text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+*/
+
+/* CAMBIO 12
+EN TITULO:
+color: hsla(120, 100%, 50%, 0.5);
+*/
+
+/* CAMBIO 13
+EN #principal:
+outline: 2px dashed #000099;
+outline-offset: 15px;
+
+*/
+/* CAMBIO 14
+EN #principal:
+-moz-border-image: url("diamonds.png") 29 stretch;
+-webkit-border-image: url("diamonds.png") 29 stretch;
+border-image: url("diamonds.png") 29 stretch;
+
+*/
+
+/* CAMBIO 15: La función scale recibe dos parámetros: el valor X para la
+escala horizontal y el valor Y para la escala vertical. Si solo un valor es provisto el mismo valor es aplicado a ambos
+parámetros.
+EN #principal:
+-moz-transform: scale(2);
+-webkit-transform: scale(2);
+*/
+
+/* CAMBIO 16: scale sirve para
+EN #principal:
+-moz-transform: scale(1,-1);
+-webkit-transform: scale(1,-1);
+*/
+
+/* CAMBIO 17: rotate sirve para rotar el elemento en la direccion de las agujas del reloj
+EN #principal:
+-moz-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+*/
+
+/* CAMBIO 18: skew sirve para que usando dos parámetros. cada parámetro de esta función solo afecta
+una dimensión.
+EN #principal:
+-moz-transform: skew(20deg);
+-webkit-transform: skew(20deg);*/
+
+/* CAMBIO 19: translate considera la pantalla como una grilla de pixeles, con la posición original del elemento usada como
+un punto de referencia
+EN #principal: 
+-moz-transform: translate(100px);
+-webkit-transform: translate(100px);
+*/
+
+/* CAMBIO 20: todo a la vez en principal seria:*/
+#principal{
+-moz-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+-webkit-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+}
+
+/* CAMBIO 21:*/
+#principal:hover{
+-moz-transform: rotate(5deg);
+-webkit-transform: rotate(5deg);
+
+/*CAMBIO 22: Se hace una transición*/
+
+-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+
+}
+
+    /*DEL EJERCICIO ANTERIOR */
+    #principal { 
+        display: block;
+        width: 500px;
+        margin: 50px auto;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #999999;
+    background: #DDDDDD;
+    -moz-border-radius: 20px / 10px;
+-webkit-border-radius: 20px / 10px;
+border-radius: 20px / 10px;
+-moz-box-shadow: rgb(150,150,150) 5px 5px;
+-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+box-shadow: rgb(150,150,150) 5px 5px;
+background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+outline: 2px dashed #000099;
+outline-offset: 15px;
+}
+
+#titulo {
+        font: bold 36px MiNuevaFuente, verdana, sans-serif;
+        text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+        color: hsla(120, 100%, 50%, 0.5);
+}
+

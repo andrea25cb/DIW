@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/misestilos.css">
+
+    <style>
+        div[class^='col-'] {
+            border: 2px solid rgb(255, 255, 255);
+        }
+        
+        .verde {
+            background-color: rgb(29, 235, 29);
+        }
+        
+        .naranja {
+            background-color: rgb(250, 246, 22);
+        }
+        
+        .azul {
+            background-color: rgb(255, 0, 0);
+            height: 150px;
+        }
+        
+        .header {
+            background-color: rgb(72, 255, 0);
+        }
+        
+        @media(min-width:600px) and (max-width:800px) {
+            .header {
+                background-color: rgb(0, 162, 255);
+            }
+            #tres {
+                background-color: rgb(72, 255, 0);
+            }
+        }
+        
+        @media (max-width:600px) {
+            .header {
+                background-color: rgb(207, 96, 165);
+            }
+            #dos {
+                background-color: rgb(0, 162, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="header col-lg-12 verde">Header</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 fs-1 azul text-md-center text-sm-start">1</div>
+            <div id="dos" class="col-12 col-sm-6 col-md-4 fs-1 azul text-md-end text-sm-end text-center">2</div>
+            <div id="tres" class="col-12 col-sm-12 col-md-4 fs-1 azul text-md-center text-sm-center text-end">3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 naranja text-center text-md-end ">Footer1</div>
+            <div class="col-12 col-md-6 naranja text-center text-md-start">Footer2</div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-3.6.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

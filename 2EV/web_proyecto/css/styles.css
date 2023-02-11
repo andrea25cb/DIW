@@ -1,0 +1,513 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.mifoto:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px darkred;
+    -webkit-box-shadow: 0px 0px 15px 15px darkred;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#index {
+    background-image: url('https://i.pinimg.com/564x/d4/96/cd/d496cd4b4515c2ca025ff4d9e77258ee.jpg');
+    background-repeat: round;
+    margin: 0;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: blanchedalmond;
+    background-color: antiquewhite;
+}
+
+#portfolio {
+    background-image: url('https://i.pinimg.com/564x/30/ab/98/30ab98874d880b9a662fc77a03daec96.jpg');
+    background-repeat: round;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#about body {
+    padding: 25px;
+    background-image: url('https://i.pinimg.com/564x/d4/96/cd/d496cd4b4515c2ca025ff4d9e77258ee.jpg');
+    background-repeat: round;
+    margin: 0;
+    color: black;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dark-mode {
+    padding: 25px;
+    background-image: url('https://i.pinimg.com/564x/80/8a/1d/808a1de0f5a876bcdbdeae733ab6402a.jpg');
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#contact {
+    background-image: url('https://i.pinimg.com/564x/cf/05/0d/cf050db0cf91ba1bdff911b9f75a551b.jpg');
+    background-repeat: round;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#lana {
+    background-image: url('https://i.pinimg.com/564x/cf/05/0d/cf050db0cf91ba1bdff911b9f75a551b.jpg');
+    background-repeat: round;
+    padding: 20px;
+}
+
+#demo {
+    background-color: black;
+}
+
+.masthead {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+}
+
+.masthead p {
+    font-size: 1.25rem;
+}
+
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 200%;
+}
+
+.figure {
+    display: inline-block;
+}
+
+.figure-img {
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.figure-caption {
+    font-size: 0.875em;
+    color: #6c757d;
+}
+
+li {
+    background-color: darkred;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: black;
+    color: #fff;
+}
+
+.copyright {
+    background-color: darkred;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900');
+#contact h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 8.5vw;
+    color: white;
+    padding: 5rem 0;
+    text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
+}
+
+.bubbles-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 15rem;
+    transform: translateX(-50%);
+    opacity: 0.75;
+    overflow: visible;
+}
+
+.bubbles {
+    width: 100%;
+    height: auto;
+}
+
+.bubbles circle {
+    stroke: white;
+    fill: none;
+}
+
+.bubbles>g>g:nth-of-type(3n) circle {
+    stroke: rgb(216, 142, 200);
+}
+
+.bubbles>g>g:nth-of-type(4n) circle {
+    stroke: rgb(102, 102, 141);
+}
+
+.bubbles-large {
+    overflow: visible;
+}
+
+.bubbles-large>g {
+    transform: translateY(2048px);
+    opacity: 0;
+    will-change: transform, opacity;
+    -webkit-transform: translateY(2048px);
+    -moz-transform: translateY(2048px);
+    -ms-transform: translateY(2048px);
+    -o-transform: translateY(2048px);
+}
+
+.bubbles-large g:nth-of-type(1) {
+    animation: up 6.5s infinite;
+    -webkit-animation: up 6.5s infinite;
+}
+
+.bubbles-large g:nth-of-type(1) g {
+    transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -o-transform: translateX(350px);
+}
+
+.bubbles-large g:nth-of-type(1) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(2) {
+    animation: up 5.25s 250ms infinite;
+    -webkit-animation: up 5.25s 250ms infinite;
+}
+
+.bubbles-large g:nth-of-type(2) g {
+    transform: translateX(450px);
+    -webkit-transform: translateX(450px);
+    -moz-transform: translateX(450px);
+    -ms-transform: translateX(450px);
+    -o-transform: translateX(450px);
+}
+
+.bubbles-large g:nth-of-type(2) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(3) {
+    animation: up 6s 750ms infinite;
+    -webkit-animation: up 6s 750ms infinite;
+}
+
+.bubbles-large g:nth-of-type(3) g {
+    transform: translateX(700px);
+    -webkit-transform: translateX(700px);
+    -moz-transform: translateX(700px);
+    -ms-transform: translateX(700px);
+    -o-transform: translateX(700px);
+}
+
+.bubbles-large g:nth-of-type(3) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(4) {
+    animation: up 5.5s 1.5s infinite;
+    -webkit-animation: up 5.5s 1.5s infinite;
+}
+
+.bubbles-large g:nth-of-type(4) g {
+    transform: translatesX(500px);
+    -webkit-transform: translatesX(500px);
+    -moz-transform: translatesX(500px);
+    -ms-transform: translatesX(500px);
+    -o-transform: translatesX(500px);
+}
+
+.bubbles-large g:nth-of-type(4) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(5) {
+    animation: up 6.5s 4s infinite;
+    -webkit-animation: up 6.5s 4s infinite;
+}
+
+.bubbles-large g:nth-of-type(5) g {
+    transform: translateX(675px);
+    -webkit-transform: translateX(675px);
+    -moz-transform: translateX(675px);
+    -ms-transform: translateX(675px);
+    -o-transform: translateX(675px);
+}
+
+.bubbles-large g:nth-of-type(5) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+
+/* BURBUJAS PEQUEÑAS: */
+
+.bubbles-small {
+    overflow: visible;
+}
+
+.bubbles-small g {
+    transform: translateY(2048px);
+    opacity: 0;
+    will-change: transform, opacity;
+    -webkit-transform: translateY(2048px);
+    -moz-transform: translateY(2048px);
+    -ms-transform: translateY(2048px);
+    -o-transform: translateY(2048px);
+}
+
+.bubbles-small circle {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.bubbles-small g:nth-of-type(1) {
+    animation: up 5.25s infinite;
+    -webkit-animation: up 5.25s infinite;
+}
+
+.bubbles-small g:nth-of-type(1) g {
+    transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -o-transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(1) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(2) {
+    animation: up 5.75s infinite;
+    -webkit-animation: up 5.75s infinite;
+}
+
+.bubbles-small g:nth-of-type(2) g {
+    transform: translateX(750px);
+    -webkit-transform: translateX(750px);
+    -moz-transform: translateX(750px);
+    -ms-transform: translateX(750px);
+    -o-transform: translateX(750px);
+}
+
+.bubbles-small g:nth-of-type(2) circle {
+    animation: wobble 3s infinite ease-in-out;
+    -webkit-animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(3) {
+    animation: up 5.25s 250ms infinite;
+    -webkit-animation: up 5.25s 250ms infinite;
+}
+
+.bubbles-small g:nth-of-type(3) g {
+    transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -o-transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(3) circle {
+    animation: wobble 3s 250ms infinite ease-in-out;
+    -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(4) {
+    animation: up 5.75s 325ms infinite;
+    -webkit-animation: up 5.75s 325ms infinite;
+}
+
+.bubbles-small g:nth-of-type(4) g {
+    transform: translateX(180px);
+    -webkit-transform: translateX(180px);
+    -moz-transform: translateX(180px);
+    -ms-transform: translateX(180px);
+    -o-transform: translateX(180px);
+}
+
+.bubbles-small g:nth-of-type(4) circle {
+    animation: wobble 3s 325ms infinite ease-in-out;
+    -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(5) {
+    animation: up 6s 125ms infinite;
+    -webkit-animation: up 6s 125ms infinite;
+}
+
+.bubbles-small g:nth-of-type(5) g {
+    transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -o-transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(5) circle {
+    animation: wobble 3s 250ms infinite ease-in-out;
+    -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(6) {
+    animation: up 5.13s 250ms infinite;
+    -webkit-animation: up 5.13s 250ms infinite;
+}
+
+.bubbles-small g:nth-of-type(6) g {
+    transform: translateX(650px);
+    -webkit-transform: translateX(650px);
+    -moz-transform: translateX(650px);
+    -ms-transform: translateX(650px);
+    -o-transform: translateX(650px);
+}
+
+.bubbles-small g:nth-of-type(6) circle {
+    animation: wobble 3s 125ms infinite ease-in-out;
+    -webkit-animation: wobble 3s 125ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(7) {
+    animation: up 6.25s 350ms infinite;
+    -webkit-animation: up 6.25s 350ms infinite;
+}
+
+.bubbles-small g:nth-of-type(7) g {
+    transform: translateX(480px);
+    -webkit-transform: translateX(480px);
+    -moz-transform: translateX(480px);
+    -ms-transform: translateX(480px);
+    -o-transform: translateX(480px);
+}
+
+.bubbles-small g:nth-of-type(7) circle {
+    animation: wobble 3s 325ms infinite;
+    -webkit-animation: wobble 3s 325ms infinite;
+}
+
+.bubbles-small g:nth-of-type(8) {
+    animation: up 7s 200ms infinite;
+    -webkit-animation: up 7s 200ms infinite;
+}
+
+.bubbles-small g:nth-of-type(8) g {
+    transform: translateX(330px);
+    -webkit-transform: translateX(330px);
+    -moz-transform: translateX(330px);
+    -ms-transform: translateX(330px);
+    -o-transform: translateX(330px);
+}
+
+.bubbles-small g:nth-of-type(8) circle {
+    animation: wobble 3s 325ms infinite ease-in-out;
+    -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(9) {
+    animation: up 6.25s 233ms infinite;
+    -webkit-animation: up 6.25s 233ms infinite;
+}
+
+.bubbles-small g:nth-of-type(9) g {
+    transform: translateX(230px);
+}
+
+.bubbles-small g:nth-of-type(9) circle {
+    animation: wobble 3s 275ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(10) {
+    animation: up 6s 900ms infinite;
+    -webkit-animation: up 6s 900ms infinite;
+}
+
+.bubbles-small g:nth-of-type(10) g {
+    transform: translateX(730px);
+}
+
+.bubbles-small g:nth-of-type(10) circle {
+    animation: wobble 2s 905ms infinite ease-in-out;
+    -webkit-animation: wobble 2s 905ms infinite ease-in-out;
+}
+
+@keyframes wobble {
+    33% {
+        transform: translateX(-50px);
+    }
+    66% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+    }
+    10%,
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1024px);
+    }
+}

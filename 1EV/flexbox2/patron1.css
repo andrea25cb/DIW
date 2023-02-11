@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.container  {
+    display: flex;
+  flex-wrap: wrap;
+    margin: auto;
+}
+
+.columna1, .columna2, .columna3{
+    border: 1px solid red;
+    width: 100%;
+}
+
+
+@media (min-width: 600px) {
+    .columna2,.columna3 {
+        flex: 50%;
+      }
+  }
+
+@media (min-width: 800px) {
+   .container{
+    width: 800px;
+   }
+}

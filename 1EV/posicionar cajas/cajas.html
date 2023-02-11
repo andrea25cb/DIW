@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<style>
+    #caja1 {
+        height: 50px;
+        width: 220px;
+        background-color: rgb(234, 180, 180);
+        position: static;
+        padding: 5px;
+    }
+    
+    #caja2 {
+        height: 60px;
+        width: 250px;
+        background-color: rgb(249, 249, 128);
+        position: absolute;
+        margin-left: 210px;
+        top: 80px;
+        z-index: 1;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    #caja3 {
+        height: 100px;
+        width: 230px;
+        background-color: rgb(172, 238, 239);
+        position: relative;
+        top: 13px;
+        left: 20px;
+        margin-bottom: 8px;
+        padding: 5px;
+    }
+    
+    #caja4 {
+        height: 50px;
+        width: 200px;
+        background-color: rgb(149, 249, 149);
+        padding: 5px;
+    }
+    
+    #caja5 {
+        height: 100px;
+        width: 600px;
+        background-color: rgb(130, 142, 142);
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    #caja6 {
+        width: 250px;
+        height: 60px;
+        background-color: rgb(162, 150, 250);
+        position: absolute;
+        margin-left: 5px;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    #caja7 {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(249, 172, 231);
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    #caja8 {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(249, 192, 172);
+        position: sticky;
+        right: 50px;
+        top: 50px;
+        text-align: right;
+        padding: 5px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <h2>NO define posicion</h2>
+    <div class="scroll" id="caja1">Primera: No define posición, por lo que es STATIC</div>
+    <div id="caja2">Segunda: Capa absoluta solo tiene como contenedor body, por lo tanto es relativa a body</div>
+    <div class="scroll" id="caja3">Tercera: Capa de posicionamiento relativo. Se coloca teniendo en cuenta las propiedades a partir de la posición que le tocaría en el flujo HTML. No afecta al resto de capas.</div>
+    <div id="caja4">Cuarta: Se ignoran los valores de desplazamiento</div>
+    <div class="scroll" id="caja5">Quinta: Capa absoluta, se referencia según su contenedor porque no es un static
+        <div id="caja6">Sexta: dentro de la caja5. Absoluta, se referencia dentro de su contenedor porque este no es un static.</div>
+    </div>
+    <div class="auto" id="caja7">Septima: No se mueve al desplazar la ventana</div>
+    <div id="caja8">Octavo: Sticky</div>
+
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+    <h3>NO define posición</h3>
+
+</body>
+
+</html>

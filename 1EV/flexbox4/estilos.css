@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 4px;
+    font-size: 1.5vw;
+}
+
+header {
+    background-image: url("img.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+}
+
+.social {
+    font-size: 20px;
+}
+
+.nav {
+    flex: auto;
+}
+
+.texto-principal {
+    background-color: orange;
+}
+
+.texto-principal h1 {
+    background-color: rgb(255, 197, 88);
+}
+
+.texto-principal h1:before {
+    content: "SOY GRANDE";
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px rgb(233, 220, 100);
+}
+
+.logo {
+    font-size: 30px;
+}
+
+a:hover {
+    color: rgb(0, 119, 255);
+}
+
+.social {
+    font-size: 30px;
+    margin-top: 1.7%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#insta:hover {
+    color: rgb(0, 119, 255);
+}
+
+#tw:hover {
+    color: rgb(0, 119, 255);
+}
+
+.section {
+    background-color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.articulos {
+    background-color: rgb(28, 63, 60);
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 3;
+}
+
+.article {
+    background-color: rgb(83, 117, 114);
+    flex: 40%;
+}
+
+.article:before {
+    content: "article";
+}
+
+.navegacion {
+    background-color: rgb(161, 224, 219);
+    flex: 100%;
+}
+
+.aside {
+    background-color: coral;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
+}
+
+.publicidad {
+    background-color: bisque;
+    flex: 1 100%;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.pie {
+    background-color: bisque;
+    width: 30%;
+}
+
+@media(min-width:600px) and (max-width:800px) {
+    * {
+        font-size: 3vw;
+    }
+    header {
+        background-color: rgb(62, 186, 208);
+    }
+    .menu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1;
+        text-align: center;
+        background-color: rgb(240, 112, 112);
+    }
+    .logo,
+    .nav,
+    .social {
+        margin: 1 auto;
+        background-color: rgb(145, 87, 212);
+    }
+    .texto-principal {
+        background-color: rgb(0, 137, 18);
+    }
+    .texto-principal h1 {
+        background-color: rgb(145, 144, 242);
+    }
+    .texto-principal h1:before {
+        content: "SOY MEDIANO";
+    }
+    .pie {
+        background-color: rgb(138, 186, 244);
+        width: 75%;
+        margin: 0 auto;
+    }
+    .articulos {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        background-color: rgb(216, 216, 56);
+    }
+    .article {
+        background-color: rgb(161, 31, 181);
+        flex: 1 30%;
+    }
+    .article:before {
+        content: "ADIOS";
+    }
+    .section {
+        display: flex;
+        flex-flow: wrap;
+        background-color: rgb(173, 237, 232);
+    }
+    .aside {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 auto;
+        background-color: rgb(255, 130, 240);
+    }
+    .footer {
+        background-color: rgb(62, 3, 255);
+    }
+}
+
+@media (max-width:600px) {
+    * {
+        font-size: 2vw;
+    }
+    header {
+        background-color: rgb(93, 208, 62);
+    }
+    .menu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1;
+        text-align: center;
+        background-color: pink;
+    }
+    .logo,
+    .nav,
+    .social {
+        margin: 1 auto;
+    }
+    .texto-principal {
+        background-color: rgb(30, 0, 255);
+    }
+    .texto-principal h1 {
+        background-color: rgb(145, 144, 242);
+    }
+    .texto-principal h1:before {
+        content: "SOY PEQUEÑO";
+    }
+    .pie {
+        background-color: rgb(156, 235, 127);
+        width: 100%;
+    }
+    .articulos {
+        background-color: rgb(28, 63, 60);
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background-color: rgb(234, 255, 0);
+    }
+    .article {
+        background-color: rgb(255, 244, 160);
+        flex: 1 30%;
+    }
+    .article:before {
+        content: "HOLA";
+    }
+    .section {
+        display: flex;
+        flex-flow: wrap;
+        background-color: blueviolet;
+    }
+    .aside {
+        display: flex;
+        flex-flow: column;
+        flex: 1 auto;
+        background-color: pink;
+    }
+    .footer {
+        background-color: rgb(255, 3, 3);
+    }
+}

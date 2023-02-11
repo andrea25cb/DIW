@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    color: white;
+    background-image: url("img.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+}
+
+.social {
+    font-size: 20px;
+    color: white;
+}
+
+.nav {
+    flex: auto;
+    color: white;
+}
+
+.texto-principal {
+    background-color: rgb(221, 148, 209);
+}
+
+.texto-principal h1 {
+    background-color: rgb(208, 88, 255);
+}
+
+.texto-principal h1:before {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum...";
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.329);
+    color: white;
+    text-emphasis-color: white;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 2px 2px rgb(233, 220, 100);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.329);
+    border-color: aliceblue;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+a:hover {
+    color: rgb(0, 119, 255);
+}
+
+.social {
+    font-size: 30px;
+    margin-top: 1.7%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#insta:hover {
+    color: rgb(0, 119, 255);
+}
+
+#tw:hover {
+    color: rgb(0, 119, 255);
+}
+
+.section {
+    background-color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+#p1,
+#p2 {
+    background-color: black;
+    color: white;
+}
+
+.articulos {
+    background-color: rgb(28, 63, 60);
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 3;
+}
+
+.article {
+    background-color: rgb(198, 133, 228);
+    flex: 1 1 40%;
+    font-size: large;
+}
+
+.foto {
+    background-image: url('gatos.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding-top: 230px;
+    font-size: 2vw;
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+.article p:before {
+    content: "TITULO DE LA NOTICIA";
+}
+
+.navegacion {
+    background-color: rgb(161, 224, 219);
+    flex: 100%;
+}
+
+.aside {
+    background-color: rgb(62, 9, 97);
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
+}
+
+.publicidad {
+    background-color: rgb(0, 0, 0);
+    flex: 1 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(111, 27, 98);
+    justify-content: center;
+}
+
+.pie {
+    background-color: bisque;
+    width: 30%;
+}
+
+@media(min-width:600px) and (max-width:800px) {
+    * {
+        font-size: 2vw;
+    }
+    .foto {
+        font-size: 2vw;
+    }
+    header {
+        color: white;
+        background-image: url("img.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: column wrap;
+        text-transform: uppercase;
+    }
+    .menu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.329);
+        text-shadow: 2px 2px rgb(233, 220, 100);
+        color: white;
+        text-emphasis-color: white;
+    }
+    .logo,
+    .nav,
+    .social {
+        margin: 1 auto;
+    }
+    .texto-principal {
+        background-color: rgb(221, 148, 209);
+    }
+    .texto-principal h1 {
+        background-color: rgb(208, 88, 255);
+    }
+    .pie {
+        background-color: rgb(138, 186, 244);
+        width: 75%;
+        margin: 0 auto;
+    }
+    .articulos {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .article {
+        background-color: rgb(198, 133, 228);
+        flex: 1 1 40%;
+        font-size: large;
+    }
+    .section {
+        display: flex;
+        flex-flow: wrap;
+        background-color: rgb(173, 237, 232);
+    }
+    .aside {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 auto;
+        background-color: rgb(62, 9, 97);
+    }
+    .footer {
+        background-color: rgb(111, 27, 98);
+    }
+}
+
+@media (max-width:600px) {
+    * {
+        font-size: 2vw;
+    }
+    .foto {
+        font-size: 4vw;
+    }
+    header {
+        color: white;
+        background-image: url("img.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: column wrap;
+        text-transform: uppercase;
+    }
+    .menu {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.329);
+        text-shadow: 2px 2px rgb(233, 220, 100);
+        color: white;
+        text-emphasis-color: white;
+    }
+    .logo,
+    .nav,
+    .social {
+        margin: 1 auto;
+    }
+    .texto-principal {
+        background-color: rgb(221, 148, 209);
+    }
+    .texto-principal h1 {
+        background-color: rgb(208, 88, 255);
+    }
+    .pie {
+        background-color: rgb(156, 235, 127);
+        width: 100%;
+    }
+    .articulos {
+        background-color: rgb(28, 63, 60);
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        background-color: rgb(234, 255, 0);
+    }
+    .article {
+        background-color: rgb(198, 133, 228);
+        flex: 1 1 40%;
+        font-size: large;
+    }
+    .section {
+        display: flex;
+        flex-flow: wrap;
+        background-color: blueviolet;
+    }
+    .aside {
+        display: flex;
+        flex-flow: column;
+        flex: 1 auto;
+        background-color: rgb(62, 9, 97);
+    }
+    .footer {
+        background-color: rgb(111, 27, 98);
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #444;
+        }
+        
+        .borde {
+            border: 1px solid #000;
+            text-align: center;
+            height: 50px;
+        }
+        
+        .color1 {
+            background: #eee;
+        }
+        
+        .color2 {
+            background: #fcc314;
+        }
+        
+        .color3 {
+            background: #94ac3c;
+        }
+        
+        .color4 {
+            background: #295ba7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="borde color4 col-sm-12">HEADER</div>
+        </div>
+        <div class="row">
+            <div class="borde color1 col-sm-6 col-md-3 d-none d-sm-block">IZQUIERDA</div>
+            <div class="borde color2 col-sm-6 col-md-6">CONTENIDO</div>
+            <div class="borde color3 col-sm-12 col-md-3">DERECHA</div>
+        </div>
+        <div class="row">
+            <div class="borde color4 col-sm-12">FOOTER</div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.6.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
